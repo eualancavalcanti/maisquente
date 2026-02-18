@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog — MaisQuente</title>
+    <meta name="description" content="Blog da MaisQuente. Artigos sobre entretenimento digital, produção de conteúdo, segurança online e tendências do mercado.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://maisquente.com.br/blog/">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__inner">
+            <a href="/" class="header__logo">mais<span>quente</span></a>
+            <button class="header__toggle" aria-label="Menu" onclick="document.querySelector('.header__nav').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="header__nav">
+                    <li><a href="/sobre">Sobre</a></li>
+                    <li><a href="/blog/" class="active">Blog</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/contato">Contato</a></li>
+                    <li><a href="/acesso" class="btn btn--primary" style="padding: 0.55rem 1.25rem; font-size: 0.85rem;">Acessar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" style="padding-bottom: 2rem;">
+        <span class="hero__badge">Blog</span>
+        <h1 class="hero__title">
+            Ideias e <span>tendências</span>
+        </h1>
+        <p class="hero__subtitle">
+            Artigos sobre entretenimento digital, produção de conteúdo,
+            segurança online e as tendências que moldam o futuro do
+            mercado brasileiro.
+        </p>
+    </section>
+
+    <!-- BLOG GRID -->
+    <section class="section" style="padding-top: 0;">
+        <div class="blog-grid">
+
+            <a href="/blog/entretenimento-digital" class="blog-card">
+                <div class="blog-card__image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="#333" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+                </div>
+                <div class="blog-card__body">
+                    <span class="blog-card__tag">Tendências</span>
+                    <h2 class="blog-card__title">O futuro do entretenimento digital no Brasil</h2>
+                    <p class="blog-card__excerpt">
+                        Como o mercado brasileiro de entretenimento digital está se
+                        transformando e o que esperar para os próximos anos em termos
+                        de consumo, tecnologia e produção.
+                    </p>
+                    <div class="blog-card__meta">
+                        <span>15 Jan 2025</span>
+                        <span>6 min de leitura</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/blog/qualidade-producao" class="blog-card">
+                <div class="blog-card__image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="#333" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                </div>
+                <div class="blog-card__body">
+                    <span class="blog-card__tag">Produção</span>
+                    <h2 class="blog-card__title">Como garantimos qualidade em nossas produções</h2>
+                    <p class="blog-card__excerpt">
+                        Um olhar por trás das câmeras: o processo de curadoria,
+                        os padrões técnicos e o cuidado que colocamos em cada
+                        produção da MaisQuente.
+                    </p>
+                    <div class="blog-card__meta">
+                        <span>28 Dez 2024</span>
+                        <span>5 min de leitura</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="/blog/seguranca-digital" class="blog-card">
+                <div class="blog-card__image">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="#333" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                </div>
+                <div class="blog-card__body">
+                    <span class="blog-card__tag">Segurança</span>
+                    <h2 class="blog-card__title">Segurança digital: como protegemos nosso público</h2>
+                    <p class="blog-card__excerpt">
+                        Entenda as medidas de segurança que adotamos para proteger
+                        seus dados, sua privacidade e garantir uma navegação
+                        tranquila em nosso site.
+                    </p>
+                    <div class="blog-card__meta">
+                        <span>10 Nov 2024</span>
+                        <span>4 min de leitura</span>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section section--alt">
+        <div class="section__inner">
+            <div class="newsletter">
+                <div class="section__label">Newsletter</div>
+                <h2 class="section__title">Novos artigos direto no seu e-mail</h2>
+                <p class="section__subtitle">
+                    Receba os próximos artigos do blog e novidades da marca.
+                </p>
+                <form class="newsletter__form" onsubmit="event.preventDefault(); this.querySelector('input').value=''; document.getElementById('nl-msg').style.display='block';">
+                    <input type="email" class="newsletter__input" placeholder="Seu melhor e-mail" required>
+                    <button type="submit" class="btn btn--primary">Inscrever-se</button>
+                </form>
+                <p id="nl-msg" class="newsletter__disclaimer" style="display:none; color: var(--color-success);">
+                    Inscrição realizada com sucesso!
+                </p>
+                <p class="newsletter__disclaimer">
+                    Sem spam. Cancelamento a qualquer momento.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__brand">mais<span>quente</span></div>
+                    <p class="footer__desc">
+                        Marca brasileira de entretenimento e lifestyle
+                        para o público adulto.
+                    </p>
+                </div>
+                <div>
+                    <div class="footer__col-title">Navegação</div>
+                    <ul class="footer__links">
+                        <li><a href="/sobre">Sobre nós</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer__col-title">Legal</div>
+                    <ul class="footer__links">
+                        <li><a href="/termos">Termos de Uso</a></li>
+                        <li><a href="/privacidade">Privacidade</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer__col-title">Contato</div>
+                    <ul class="footer__links">
+                        <li><a href="mailto:contato@maisquente.com.br">contato@maisquente.com.br</a></li>
+                        <li><a href="/contato">Formulário de contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">&copy; 2025 MaisQuente Entretenimento LTDA. Conteúdo para maiores de 18 anos.</p>
+                <div class="footer__legal">
+                    <a href="/termos">Termos</a>
+                    <a href="/privacidade">Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- COOKIE BANNER -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-banner__inner">
+            <p class="cookie-banner__text">
+                Utilizamos cookies essenciais e de análise para melhorar sua experiência.
+                <a href="/privacidade">Política de Privacidade</a>.
+            </p>
+            <div class="cookie-banner__actions">
+                <button class="cookie-banner__btn cookie-banner__btn--decline" onclick="closeCookieBanner()">Recusar</button>
+                <button class="cookie-banner__btn cookie-banner__btn--accept" onclick="acceptCookies()">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function closeCookieBanner() { document.getElementById('cookieBanner').classList.remove('show'); sessionStorage.setItem('mq_cookies', 'declined'); }
+        function acceptCookies() { document.getElementById('cookieBanner').classList.remove('show'); localStorage.setItem('mq_cookies', 'accepted'); }
+        if (!localStorage.getItem('mq_cookies') && !sessionStorage.getItem('mq_cookies')) { setTimeout(function() { document.getElementById('cookieBanner').classList.add('show'); }, 1500); }
+    </script>
+
+</body>
+</html>

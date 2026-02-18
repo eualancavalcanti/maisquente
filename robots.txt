@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /acesso
+Disallow: /docs
+
+Sitemap: https://maisquente.com.br/sitemap.xml

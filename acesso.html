@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acesso — MaisQuente</title>
+    <meta name="description" content="Acesse o site da MaisQuente. Verificação de idade necessária.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="canonical" href="https://maisquente.com.br/acesso">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body style="justify-content: center; align-items: center; padding: 2rem;">
+
+    <div class="gate">
+        <div class="gate__logo">mais<span>quente</span></div>
+        <div class="gate__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="none" viewBox="0 0 24 24" stroke="#e63946" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+        </div>
+        <h1 class="gate__title">Verificação de Idade</h1>
+        <p class="gate__text">
+            Este conteúdo é destinado exclusivamente ao público
+            maior de 18 anos. Ao continuar, você confirma que possui
+            a idade mínima exigida e concorda com nossos
+            <a href="/termos" style="color: var(--color-accent);">Termos de Uso</a>.
+        </p>
+
+        <div class="gate__actions">
+            <a href="#" id="btn-confirm" class="btn btn--primary" style="width: 100%; padding: 1rem;">
+                Tenho 18 anos ou mais — Continuar
+            </a>
+            <a href="/" class="btn btn--secondary" style="width: 100%; padding: 1rem;">
+                Sou menor de idade — Voltar
+            </a>
+        </div>
+
+        <p class="gate__disclaimer">
+            Ao clicar em "Continuar", você declara ter 18 anos ou mais
+            e concorda com nossa <a href="/privacidade">Política de Privacidade</a>
+            e <a href="/termos">Termos de Uso</a>. Este site não hospeda
+            conteúdo diretamente — você será redirecionado para um
+            site externo.
+        </p>
+    </div>
+
+    <p style="margin-top: 2rem; font-size: 0.85rem;">
+        <a href="/" style="color: var(--color-text-muted); text-decoration: none;">&larr; Voltar para a página inicial</a>
+    </p>
+
+    <script>
+        document.getElementById('btn-confirm').addEventListener('click', function(e) {
+            e.preventDefault();
+            sessionStorage.setItem('mq_age_verified', 'true');
+            sessionStorage.setItem('mq_age_verified_at', new Date().toISOString());
+            var d=[104,116,116,112,115,58,47,47,104,111,116,98,111,121,115,46,99,111,109,46,98,114];
+            window.location.href=d.map(function(c){return String.fromCharCode(c)}).join('');
+        });
+    </script>
+
+</body>
+</html>

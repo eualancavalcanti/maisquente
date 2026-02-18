@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato — MaisQuente</title>
+    <meta name="description" content="Entre em contato com a MaisQuente. Formulário de contato, e-mail e informações da empresa.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://maisquente.com.br/contato">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__inner">
+            <a href="/" class="header__logo">mais<span>quente</span></a>
+            <button class="header__toggle" aria-label="Menu" onclick="document.querySelector('.header__nav').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </button>
+            <nav>
+                <ul class="header__nav">
+                    <li><a href="/sobre">Sobre</a></li>
+                    <li><a href="/blog/">Blog</a></li>
+                    <li><a href="/faq">FAQ</a></li>
+                    <li><a href="/contato" class="active">Contato</a></li>
+                    <li><a href="/acesso" class="btn btn--primary" style="padding: 0.55rem 1.25rem; font-size: 0.85rem;">Acessar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" style="padding-bottom: 2rem;">
+        <span class="hero__badge">Contato</span>
+        <h1 class="hero__title">
+            Fale <span>conosco</span>
+        </h1>
+        <p class="hero__subtitle">
+            Dúvidas, sugestões, parcerias ou solicitações? Estamos
+            prontos para ajudar. Preencha o formulário ou use um
+            dos canais abaixo.
+        </p>
+    </section>
+
+    <!-- CONTACT CONTENT -->
+    <section class="section" style="padding-top: 0;">
+        <div class="contact-grid">
+            <!-- FORM -->
+            <div>
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Nome completo</label>
+                        <input type="text" id="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <select id="subject" required>
+                            <option value="">Selecione um assunto</option>
+                            <option value="duvida">Dúvida geral</option>
+                            <option value="suporte">Suporte técnico</option>
+                            <option value="parceria">Parceria comercial</option>
+                            <option value="imprensa">Imprensa</option>
+                            <option value="privacidade">Privacidade e dados</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" placeholder="Escreva sua mensagem..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--primary" style="width: 100%;">Enviar mensagem</button>
+                    <div id="formSuccess" class="form-message form-message--success">
+                        Mensagem enviada com sucesso! Responderemos em até 48 horas úteis.
+                    </div>
+                </form>
+            </div>
+
+            <!-- INFO -->
+            <div class="contact-info">
+                <div class="contact-info__item">
+                    <div class="contact-info__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#e63946" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-info__label">E-mail geral</div>
+                        <div class="contact-info__value">contato@maisquente.com.br</div>
+                    </div>
+                </div>
+
+                <div class="contact-info__item">
+                    <div class="contact-info__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#e63946" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-info__label">Privacidade</div>
+                        <div class="contact-info__value">privacidade@maisquente.com.br</div>
+                    </div>
+                </div>
+
+                <div class="contact-info__item">
+                    <div class="contact-info__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#e63946" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-info__label">Localização</div>
+                        <div class="contact-info__value">São Paulo, SP — Brasil</div>
+                    </div>
+                </div>
+
+                <div class="contact-info__item">
+                    <div class="contact-info__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#e63946" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-info__label">Atendimento</div>
+                        <div class="contact-info__value">
+                            Segunda a Sexta: 9h — 18h<br>
+                            Resposta em até 48 horas úteis
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info__item">
+                    <div class="contact-info__icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#e63946" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    </div>
+                    <div>
+                        <div class="contact-info__label">Empresa</div>
+                        <div class="contact-info__value">
+                            MaisQuente Entretenimento LTDA<br>
+                            CNPJ: 00.000.000/0001-00
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <div class="footer__grid">
+                <div>
+                    <div class="footer__brand">mais<span>quente</span></div>
+                    <p class="footer__desc">
+                        Marca brasileira de entretenimento e lifestyle
+                        para o público adulto. Produções originais com
+                        qualidade profissional.
+                    </p>
+                </div>
+                <div>
+                    <div class="footer__col-title">Navegação</div>
+                    <ul class="footer__links">
+                        <li><a href="/sobre">Sobre nós</a></li>
+                        <li><a href="/blog/">Blog</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer__col-title">Legal</div>
+                    <ul class="footer__links">
+                        <li><a href="/termos">Termos de Uso</a></li>
+                        <li><a href="/privacidade">Privacidade</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer__col-title">Contato</div>
+                    <ul class="footer__links">
+                        <li><a href="mailto:contato@maisquente.com.br">contato@maisquente.com.br</a></li>
+                        <li><a href="/contato">Formulário de contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copy">
+                    &copy; 2025 MaisQuente Entretenimento LTDA. CNPJ: 00.000.000/0001-00.
+                    Conteúdo para maiores de 18 anos.
+                </p>
+                <div class="footer__legal">
+                    <a href="/termos">Termos</a>
+                    <a href="/privacidade">Privacidade</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- COOKIE BANNER -->
+    <div class="cookie-banner" id="cookieBanner">
+        <div class="cookie-banner__inner">
+            <p class="cookie-banner__text">
+                Utilizamos cookies essenciais e de análise para melhorar sua experiência.
+                Ao continuar navegando, você concorda com nossa
+                <a href="/privacidade">Política de Privacidade</a>.
+            </p>
+            <div class="cookie-banner__actions">
+                <button class="cookie-banner__btn cookie-banner__btn--decline" onclick="closeCookieBanner()">Recusar</button>
+                <button class="cookie-banner__btn cookie-banner__btn--accept" onclick="acceptCookies()">Aceitar</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function closeCookieBanner() {
+            document.getElementById('cookieBanner').classList.remove('show');
+            sessionStorage.setItem('mq_cookies', 'declined');
+        }
+        function acceptCookies() {
+            document.getElementById('cookieBanner').classList.remove('show');
+            localStorage.setItem('mq_cookies', 'accepted');
+        }
+        if (!localStorage.getItem('mq_cookies') && !sessionStorage.getItem('mq_cookies')) {
+            setTimeout(function() { document.getElementById('cookieBanner').classList.add('show'); }, 1500);
+        }
+
+        function handleSubmit(e) {
+            e.preventDefault();
+            document.getElementById('formSuccess').style.display = 'block';
+            e.target.reset();
+            setTimeout(function() {
+                document.getElementById('formSuccess').style.display = 'none';
+            }, 5000);
+        }
+    </script>
+
+</body>
+</html>
